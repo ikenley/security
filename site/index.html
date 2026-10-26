@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security</title>
+  <style>
+    body {
+      font: 16px/1.5 Arial, Helvetica, sans-serif;
+      color: #000;
+      background: #fff;
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+    h1 { font-size: 2rem; font-weight: normal; margin: 1.25rem 0 0.4rem; }
+    a { color: #1155cc; }
+    .accent { color: #1155cc; }
+    ol { padding-left: 1.75rem; }
+    ol ol { list-style-type: lower-alpha; }
+    ol ol ol { list-style-type: lower-roman; }
+    li { margin: 0.2rem 0; }
+  </style>
+</head>
+<body>
+<h1>Security</h1>
+<p>No deep thoughts.</p>
+
+<ol>
+  <li><b>Prioritize critical resources</b>
+    <ol>
+      <li>Prioritize Apple/Google/Microsoft account, your password manager, your mobile carrier, banks and brokerages</li>
+      <li>For engineers: GitHub, AWS root accounts, domain registrars.</li>
+    </ol>
+  </li>
+  <li><b>Use a password manager</b>. Use a unique password for every account. Choose one of these:
+    <ol>
+      <li>Cloud-hosted managers (Bitwarden, 1Password, Proton Pass, and similar)</li>
+      <li>Browser managers: Google Password Manager / Apple Passwords</li>
+      <li><a href="https://keepass.info/">https://keepass.info/</a> synced to Dropbox</li>
+    </ol>
+  </li>
+  <li><b>Enroll in multi-factor authentication (MFA)</b>
+    <ol>
+      <li>Register <a href="https://www.amazon.com/dp/B0BVNRXFHT">two hardware security keys</a> (a daily one and a backup kept elsewhere), or passkeys on at least two devices</li>
+      <li>Use an authenticator app (Google Authenticator) where passkeys aren’t supported.</li>
+      <li>Remove SMS as a second factor wherever possible, since it’s vulnerable to SIM swapping.</li>
+    </ol>
+  </li>
+  <li><a href="https://landing.google.com/advancedprotection/">Enroll in Google’s Advanced Protection Program</a></li>
+  <li><b>Your account is only as secure as its weakest backup sign-in.</b>
+    <ol>
+      <li>Go to <a href="https://myaccount.google.com/security">myaccount.google.com/security</a> and remove SMS codes, the recovery phone and old recovery emails. Keep only security keys, passkeys and printed backup codes.</li>
+      <li>Store recovery codes offline, for example printed and kept with important documents.</li>
+    </ol>
+  </li>
+  <li>Build habits for social engineering.
+    <ol>
+      <li>Treat urgency as a red flag in itself.</li>
+      <li>Verify unexpected requests for money, codes, or access through a separate channel you initiate.</li>
+      <li>Never approve an MFA prompt you didn’t trigger.</li>
+      <li><b class="accent">Don’t click on links in emails you didn’t expect</b>, especially ones asking you to log in, pay, or “verify.” Go to the site yourself instead.</li>
+      <li>Agree on a family code word. Voice-cloning scams that impersonate a relative are now cheap to run.
+        <ol>
+          <li><b class="accent">Unguessable from the outside</b>. Avoid pet names, street names, school mascots, favorite teams, or anything visible in photos or social media posts. Scammers mine exactly that material.</li>
+          <li><b class="accent">Memorable for everyone</b>. That includes grandparents, who are frequent targets of these scams, and kids once they’re old enough.</li>
+          <li><b class="accent">Odd enough not to come up by accident</b>. A random two-word combination works well.</li>
+          <li><b class="accent">Never written in texts or email</b>. Agree on it in person, so it can’t leak from a compromised inbox.</li>
+          <li><b>A private memory is often the stickiest choice</b>, because it’s easy to recall under stress and meaningless to outsiders.</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>Randomize your security question answers
+    <ol>
+      <li>Instead of a real answer, create another password manager value</li>
+    </ol>
+  </li>
+  <li>Freeze your credit
+    <ol>
+      <li><a href="https://www.experian.com/help/credit-freeze/">https://www.experian.com/help/credit-freeze/</a></li>
+      <li><a href="https://www.equifax.com/personal/credit-report-services/credit-freeze/">https://www.equifax.com/personal/credit-report-services/credit-freeze/</a></li>
+      <li><a href="https://www.transunion.com/credit-freeze">https://www.transunion.com/credit-freeze</a></li>
+    </ol>
+  </li>
+  <li>Use a secure message app
+    <ol>
+      <li>Look for end-to-end encryption: Signal, iMessage, or WhatsApp</li>
+      <li>Turn on its registration lock PIN</li>
+    </ol>
+  </li>
+  <li><a href="https://knowledge.workspace.google.com/admin/users/add-or-delete-an-alternate-email-address-email-alias">Set up an email alias</a> and use it for sign-ups</li>
+</ol>
+</body>
+</html>
