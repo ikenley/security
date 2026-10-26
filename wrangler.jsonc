@@ -1,0 +1,8 @@
+{
+	"name": "security-tips",
+	"compatibility_date": "2026-10-01",
+	"assets": {
+		"directory": "./site", // your build output folder
+		"not_found_handling": "single-page-application" // serve index.html for client-side routes
+	}
+}
