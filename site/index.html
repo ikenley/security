@@ -24,41 +24,59 @@
 </head>
 <body>
 <h1>Security</h1>
-<p>No deep thoughts.</p>
+<p>Do these in order. Most take about 10 minutes.</p>
 
 <ol>
-  <li><b>Prioritize critical resources</b>
+  <li><b>Start with the accounts that unlock everything else</b>
     <ol>
-      <li>Prioritize Apple/Google/Microsoft account, your password manager, your mobile carrier, banks and brokerages</li>
-      <li>For engineers: GitHub, AWS root accounts, domain registrars.</li>
+      <li>Your email account matters most, because it can reset the password on every other account.</li>
+      <li>Then your Apple, Google or Microsoft account, your password manager, your mobile carrier, and your banks and brokerages.</li>
     </ol>
   </li>
-  <li><b>Use a password manager</b>. Use a unique password for every account. Choose one of these:
+  <li><b>Use a password manager</b>, with a unique password for every account.
     <ol>
-      <li>Cloud-hosted managers (Bitwarden, 1Password, Proton Pass, and similar)</li>
-      <li>Browser managers: Google Password Manager / Apple Passwords</li>
-      <li><a href="https://keepass.info/">https://keepass.info/</a> synced to Dropbox</li>
+      <li><b>Default: use the one built into your devices.</b> It’s free and already installed.
+        <ol>
+          <li>Apple Passwords if you mostly use iPhone and Mac.</li>
+          <li>Google Password Manager if you use Android, Windows or Chrome. Turn on “on-device encryption” in its settings so only you can read your passwords.</li>
+          <li>Your passwords are then only as safe as your Apple or Google account, which the rest of this list protects.</li>
+        </ol>
+      </li>
+      <li>If you want one that works the same everywhere: Bitwarden, 1Password or Proton Pass. Protect it with a long passphrase and two-step verification.</li>
+      <li>Do-it-yourself option: <a href="https://keepass.info/">KeePass</a> with the file synced to Dropbox.</li>
     </ol>
   </li>
-  <li><b>Enroll in multi-factor authentication (MFA)</b>
+  <li><b>Turn on two-step verification</b> (also called multi-factor authentication or MFA)
     <ol>
-      <li>Register <a href="https://www.amazon.com/dp/B0BVNRXFHT">two hardware security keys</a> (a daily one and a backup kept elsewhere), or passkeys on at least two devices</li>
-      <li>Use an authenticator app (Google Authenticator) where passkeys aren’t supported.</li>
-      <li>Remove SMS as a second factor wherever possible, since it’s vulnerable to SIM swapping.</li>
+      <li>Best: passkeys on at least two devices, or <a href="https://www.amazon.com/dp/B0BVNRXFHT">two hardware security keys</a> (one for daily use and a backup kept somewhere else).</li>
+      <li>Where passkeys aren’t supported, use an authenticator app such as Google Authenticator. Sign in to the app so your codes are backed up and a lost phone doesn’t mean lost codes.</li>
+      <li>Remove SMS as a second step wherever you can, since it’s vulnerable to SIM swapping. <b>Set up the new method first, then remove SMS</b>, or you can lock yourself out.</li>
     </ol>
   </li>
-  <li><a href="https://landing.google.com/advancedprotection/">Enroll in Google’s Advanced Protection Program</a></li>
+  <li><b><a href="https://landing.google.com/advancedprotection/">Enroll in Google’s Advanced Protection Program</a></b>
+    <ol>
+      <li>Google’s strongest setting, for anyone who has set up passkeys or security keys.</li>
+      <li>It deliberately makes account recovery slow, with extra checks, so an attacker can’t talk their way in. Keep your backup key or passkey somewhere safe.</li>
+    </ol>
+  </li>
   <li><b>Your account is only as secure as its weakest backup sign-in.</b>
     <ol>
       <li>Go to <a href="https://myaccount.google.com/security">myaccount.google.com/security</a> and remove SMS codes, the recovery phone and old recovery emails. Keep only security keys, passkeys and printed backup codes.</li>
-      <li>Store recovery codes offline, for example printed and kept with important documents.</li>
+      <li><b>Print your backup codes before removing anything else</b>, and keep them with your important documents.</li>
     </ol>
   </li>
-  <li>Build habits for social engineering.
+  <li><b>Lock your phone number with your mobile carrier</b>
+    <ol>
+      <li>Set an account PIN and turn on the carrier’s number lock or port-out protection (check its app or call). This is the main defense against SIM swapping, where a scammer moves your number to their phone.</li>
+    </ol>
+  </li>
+  <li><b>Turn on automatic updates</b> for your phone, computer and browser.</li>
+  <li><b>Build habits against scams</b>
     <ol>
       <li>Treat urgency as a red flag in itself.</li>
+      <li><b class="accent">No real company will ask you for a code.</b> Banks, government agencies and tech support never ask you to read back a code, and someone who asks for gift cards, crypto or a wire transfer is a scammer.</li>
       <li>Verify unexpected requests for money, codes, or access through a separate channel you initiate.</li>
-      <li>Never approve an MFA prompt you didn’t trigger.</li>
+      <li>Never approve a sign-in prompt you didn’t trigger.</li>
       <li><b class="accent">Don’t click on links in emails you didn’t expect</b>, especially ones asking you to log in, pay, or “verify.” Go to the site yourself instead.</li>
       <li>Agree on a family code word. Voice-cloning scams that impersonate a relative are now cheap to run.
         <ol>
@@ -66,30 +84,37 @@
           <li><b class="accent">Memorable for everyone</b>. That includes grandparents, who are frequent targets of these scams, and kids once they’re old enough.</li>
           <li><b class="accent">Odd enough not to come up by accident</b>. A random two-word combination works well.</li>
           <li><b class="accent">Never written in texts or email</b>. Agree on it in person, so it can’t leak from a compromised inbox.</li>
-          <li><b>A private memory is often the stickiest choice</b>, because it’s easy to recall under stress and meaningless to outsiders.</li>
+          <li><b class="accent">A private memory is often the stickiest choice</b>, because it’s easy to recall under stress and meaningless to outsiders.</li>
         </ol>
       </li>
     </ol>
   </li>
-  <li>Randomize your security question answers
+  <li><b>Randomize your security question answers</b>
     <ol>
-      <li>Instead of a real answer, create another password manager value</li>
+      <li>Instead of a real answer, generate a random one and save it as a note in your password manager.</li>
+      <li><a href="https://www.correcthorsebatterystaple.net/index.html">Use random words</a> rather than gibberish, since you may need to read the answer to someone over the phone.</li>
     </ol>
   </li>
-  <li>Freeze your credit
+  <li><b>Freeze your credit</b> at all three bureaus
     <ol>
-      <li><a href="https://www.experian.com/help/credit-freeze/">https://www.experian.com/help/credit-freeze/</a></li>
-      <li><a href="https://www.equifax.com/personal/credit-report-services/credit-freeze/">https://www.equifax.com/personal/credit-report-services/credit-freeze/</a></li>
-      <li><a href="https://www.transunion.com/credit-freeze">https://www.transunion.com/credit-freeze</a></li>
+      <li>It’s free, and it stops anyone from opening a loan or credit card in your name. You can lift it briefly when you apply for credit.</li>
+      <li><a href="https://www.experian.com/help/credit-freeze/">Experian</a> / <a href="https://www.equifax.com/personal/credit-report-services/credit-freeze/">Equifax</a> / <a href="https://www.transunion.com/credit-freeze">TransUnion</a></li>
+      <li>Parents can freeze their kids’ credit too.</li>
     </ol>
   </li>
-  <li>Use a secure message app
+  <li><b>Use a secure messaging app</b>
     <ol>
-      <li>Look for end-to-end encryption: Signal, iMessage, or WhatsApp</li>
-      <li>Turn on its registration lock PIN</li>
+      <li>Look for end-to-end encryption: Signal, iMessage, or WhatsApp.</li>
+      <li>Protect your account from takeover: in Signal, turn on Registration Lock; in WhatsApp, turn on two-step verification. iMessage is protected by your Apple account.</li>
     </ol>
   </li>
-  <li><a href="https://knowledge.workspace.google.com/admin/users/add-or-delete-an-alternate-email-address-email-alias">Set up an email alias</a> and use it for sign-ups</li>
+  <li><b>Use an email alias for sign-ups</b>
+    <ol>
+      <li>It cuts down on spam, and a phishing email sent to the wrong alias is easy to spot.</li>
+      <li>Easiest: add <code>+</code> and a word to your Gmail address, like <code>name+shopping@gmail.com</code>. It still arrives in your inbox.</li>
+      <li>Or use iCloud Hide My Email or <a href="https://relay.firefox.com/">Firefox Relay</a> to create separate addresses.</li>
+    </ol>
+  </li>
 </ol>
 </body>
 </html>
